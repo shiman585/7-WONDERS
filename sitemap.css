@@ -1,0 +1,194 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        /* Back Button Styling */
+.back-button {
+    margin: 20px 0;
+}
+
+.back-button button {
+    background-color: #ffd700;
+    color: #070707;
+    border: 2px solid #ffd700;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button button:hover {
+    background-color: #070707;
+    color: #ffd700;
+}
+
+/* Back Button end */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .sitemap-chart {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            min-height: 500px;
+        }
+
+        .level {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 0 40px;
+            position: relative;
+        }
+
+        .node {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid #ffd700;
+            border-radius: 8px;
+            padding: 20px 30px;
+            margin: 20px 0;
+            position: relative;
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 220px;
+        }
+
+        .node:hover {
+            background: rgba(255, 215, 0, 0.2);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .node a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .node a:hover {
+            color: #ffd700;
+        }
+
+        .connector {
+            position: absolute;
+            background: #ffd700;
+        }
+
+        .horizontal-connector {
+            height: 2px;
+            width: 40px;
+        }
+
+        .vertical-connector {
+            width: 2px;
+            height: 40px;
+        }
+
+        /* Chart Structure Connections */
+        .level-1 .node::after {
+            content: '';
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 20px;
+            background: #ffd700;
+        }
+
+        .level-2 {
+            margin-top: 60px;
+        }
+
+        .level-2 .node::before {
+            content: '';
+            position: absolute;
+            top: -22px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .sitemap-chart {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .level {
+                margin: 20px 0;
+            }
+            
+            .node {
+                width: 280px;
+            }
+            
+            .connector {
+                display: none;
+            }
+        }
+         /* WHATSAPP BUTTON START */
+  .float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .float {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+/* WHATSAPP BUTTON END */

@@ -1,0 +1,10 @@
+const wonders = [
+    { "title": "Great Pyramid of Giza", "description": "The Great Pyramid of Giza is the oldest and largest of the Seven Wonders of the Ancient World.", "image": "index images/wow 01.png", "link": "carda.html" },
+    { "title": "Hanging Gardens of Babylon", "description": "The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World.", "image": "index images/wow 02.png", "link": "cardb.html" },
+    { "title": "Temple of Artemis at Ephesus", "description": "The Temple of Artemis at Ephesus was a grand Greek temple dedicated to the goddess Artemis.", "image": "index images/wow 03.png", "link": "cardc.html" },
+    { "title": "Statue of Zeus at Olympia", "description": "The Statue of Zeus at Olympia was a giant seated statue of the Greek god Zeus.", "image": "index images/wow 04.png", "link": "cardd.html" },
+    { "title": "Mausoleum at Halicarnassus", "description": "The Mausoleum at Halicarnassus was a grand tomb built for Mausolus.", "image": "index images/wow 05.png", "link": "carde.html" },
+    { "title": "Colossus of Rhodes", "description": "The Colossus of Rhodes was a massive bronze statue of the sun god Helios.", "image": "index images/wow 06.png", "link": "cardf.html" },
+    { "title": "Lighthouse of Alexandria", "description": "The Lighthouse of Alexandria was built in the 3rd century BC.", "image": "index images/wow 07.png", "link": "cardg.html" },
+    {  "title": "ALL WONDERS 🌎", "description": "The Seven Wonders of the World amaze, timeless marvels built to praise!",  "image": "index images/wow 08.jpg", "link": "#" }
+];

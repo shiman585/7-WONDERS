@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="index images/logo.png" type="image/x-icon">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- NAVBAR STARTING -->
+    <header>
+        <nav class="navbar navbar-expand-lg main">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="index images/logo.png" height="100px" width="110px" style="padding-top: 5px;" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="INDEX.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="sitemap.html">Site Map</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="d-grid gap-2 d-md-block">
+                        <a href="feedback.html"><button class="btn button" type="button">BECOME A MEMBER</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- NAVBAR ENDING -->
+    
+    <br><br><br><br>
+    <div class="container">
+        <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h2>Contact Info</h2>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt" id="locationIcon" style="cursor: pointer;"></i>
+                            <div>
+                                <h3>Visit Us</h3>
+                                <p>123 Golden Avenue<br>Luxe City, LC 12345</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <a href="tel:+1234567890">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                            <div>
+                                <h3>Phone</h3>
+                            <p>+1234567890</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                           <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"> <i class="fas fa-envelope"></i></a>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>wonderworld@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe src="https://maps.google.com/maps?q=golden+gate+bridge&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h2>Get In Touch</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required pattern="[A-Za-z]{6,}" title="Use letters only, and a minimum  6 characters">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" title="Use a valid email format">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Message -->
+    <div class="popup" id="popupMessage">
+        <p>Thank you for your message!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <!-- WHATSAPP BUTTON START -->
+    <a href="https://web.whatsapp.com/" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <!-- WHATSAPP BUTTON END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section" style="animation-delay: 0.2s">
+                <h3>Details</h3>
+                <ul class="footer-links">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" style="animation-delay: 0.4s">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="#">wonderworld@gmail.com</a></li>
+                    <li><a href="#">+1 888 888 8888</a></li>
+                    <li><a href="#">Karachi, Pakistan</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" style="animation-delay: 0.6s">
+                <h3>Connect</h3>
+                <div class="social-container">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.google.com/" target="_blank"><i class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; © Wonders Of World</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- custom javascript -->
+      <script src="contact.js"></script>
+</body>
+</html>
